@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website
 
-## Getting Started
+**Developer:** Tabish Ali Soomro  
+**GitHub:** [https://github.com/Tabish07-dev/Porfolio1](https://github.com/Tabish07-dev/Porfolio1)  
+**Live Demo (Vercel):** *Add your Vercel link here once deployed*
 
-First, run the development server:
+---
+
+## Project Description
+
+This is a modern, responsive **Portfolio Website** built with **Next.js**, **Tailwind CSS**, and **NodeMailer** for the contact form.  
+It showcases my **projects, skills, and provides a contact form** to reach me directly via email.
+
+---
+
+## Features
+
+- **Responsive Design:** Works perfectly on mobile, tablet, and desktop.
+- **Projects Section:** Displays all completed projects with images and descriptions.
+- **Contact Form:** Users can send messages directly to my email using **NodeMailer**.
+- **Lightweight & Fast:** Optimized using Next.js and Tailwind CSS.
+
+---
+
+## Tech Stack
+
+- **Frontend:** Next.js, React, Tailwind CSS
+- **Backend (for contact form):** NodeMailer
+- **Deployment:** Vercel
+- **Version Control:** GitHub
+
+---
+
+## Setup Instructions (Local)
+
+1. Clone the repository:
 
 ```bash
+git clone https://github.com/Tabish07-dev/Porfolio1.git
+cd Porfolio1
+Install dependencies:
+
+bash
+Copy code
+npm install
+Create a .env file in the root directory and add your email credentials:
+
+env
+Copy code
+EMAIL=your_email@example.com
+PASSWORD=your_email_password_or_app_password
+Note: Use an App Password if using Gmail or secure email service.
+
+Run the project locally:
+
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Deployment on Vercel
+Push your code to GitHub (without .env file for security).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Go to Vercel Dashboard and import your repository.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Add the Environment Variables in Vercel:
 
-## Learn More
+EMAIL = your email
 
-To learn more about Next.js, take a look at the following resources:
+PASSWORD = your email password or app password
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Deploy the project.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Your live portfolio is ready! The contact form will work using NodeMailer.
